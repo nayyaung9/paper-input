@@ -15,7 +15,7 @@ template.innerHTML = `
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder', 'fullwidth', 'type']
+    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled']
   }
 
   $paperInput
@@ -41,6 +41,10 @@ class PaperInput extends HTMLElement {
         return this.$paperInput.style.width= "100%";
       case 'type':
         return this.$paperInput.type = newValue;
+      case 'required':
+        return this.$paperInput.required = true;
+      case 'disabled':
+        return this.$paperInput.disabled = true;
       default:
         return;
     }
