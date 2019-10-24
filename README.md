@@ -54,3 +54,43 @@ index.html ဆောက်ပြီး script tag နဲ့ paper-input.js က�
   placeholder="first name"
 ></paper-input>
 ```
+- fullwidth 
+
+fullwidth ပေးလိုက်ရင် သူ့ parent container ရဲ့ width ရှိသလောက် နေရာ ယူသွားပါလိမ့်မယ်။
+
+```
+<div class="container">
+  <paper-input fullwidth></paper-input>
+</div>
+```
+
+## Example
+
+```
+<paper-input
+  placeholder="Email"
+  type="email"
+  required
+></paper-input>
+
+```
+
+```
+<div class="container">
+  <paper-input
+    placeholder="Email"
+    type="email"
+    required
+    margin
+    fullwidth
+  ></paper-input>
+
+  <paper-input
+    placeholder="Password"
+    type="password"
+    required
+    margin
+    fullwidth
+  ></paper-input>
+</div>
+```
