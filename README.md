@@ -22,3 +22,15 @@ npm i hyper-paper-input
 
 directory တစ်ခုဆောက်ပြီး terminal ‌ကနေ hyper-paper-input ကို install လုပ်လိုက်ပါ။
 index.html ဆောက်ပြီး script tag နဲ့ paper-input.js ကို ချိတ်လိုက်ပါ။
+
+```
+-node_modules 
+-index.html 
+```
+
+```
+<body>
+  <script src='./node_modules/hyper-paper-input/paper-input.js'></script>
+</body>
+
+```
