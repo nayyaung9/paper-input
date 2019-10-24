@@ -17,7 +17,7 @@ template.innerHTML = `
     border-radius: .5em;
   }
   </style>
-  <input type="text" class="paperInput_standard" name=""/>
+  <input type="text" class="paperInput_standard"/>
 `;
 
 class PaperInput extends HTMLElement {
