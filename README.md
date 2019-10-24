@@ -133,6 +133,7 @@ fullwidth ပေးလိုက်ရင် သူ့ parent container ရဲ့
 - [x] Component features
 - [ ] Styling custom CSS into Component
 - [ ] CDN link for Component
+- [ ] Input animations
 
 
 @github/nayyaung9 
