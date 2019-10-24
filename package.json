@@ -1,0 +1,19 @@
+{
+  "name": "hyper-paper-input",
+  "version": "1.0.0",
+  "description": "ready-made component that can be used in any javascript frameworks",
+  "main": "paper-input.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayyaung9/paper-input.git"
+  },
+  "author": "Nay Yaung Lin Lakk <nayyaung.developer@gmail.com> (nayyaung9.github.io/test)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nayyaung9/paper-input/issues"
+  },
+  "homepage": "https://github.com/nayyaung9/paper-input#readme"
+}

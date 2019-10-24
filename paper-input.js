@@ -4,21 +4,25 @@ template.innerHTML = `
   *:focus {
     outline: none;
   }
-  input {
+  .paperInput_standard {
     border-top: none;
     border-right: none;
     border-left: none;
     padding: 6px 0;
     border-bottom: 1px solid #555;
-    style: display;
+  }
+  .outlined {
+    border: 1px solid #ddd !important;
+    padding: 10px;
+    border-radius: .5em;
   }
   </style>
-  <input type="text" class="paper-input"/>
+  <input type="text" class="paperInput_standard"/>
 `;
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus', 'margin']
+    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus', 'margin', 'class', 'variant']
   }
 
   $paperInput
@@ -54,9 +58,15 @@ class PaperInput extends HTMLElement {
         return this.$paperInput.autofocus = true;
       case 'margin':
         return this.$paperInput.style.margin = '10px auto';
+      case 'class':
+        return this.$paperInput.classList.add(newValue);
+      case 'variant':
+        return this.$paperInput.classList.add(newValue);
       default:
         return;
     }
+
+  
   }
 }
 
