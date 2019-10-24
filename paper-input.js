@@ -10,12 +10,12 @@ template.innerHTML = `
     style: display;
   }
   </style>
-  <input type="text" name="paper-input"/>
+  <input type="text" class="paper-input"/>
 `;
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder', 'fullwidth']
+    return ['placeholder', 'fullwidth', 'type']
   }
 
   $paperInput
@@ -39,6 +39,8 @@ class PaperInput extends HTMLElement {
         return this.$paperInput.placeholder = newValue;
       case 'fullwidth':
         return this.$paperInput.style.width= "100%";
+      case 'type':
+        return this.$paperInput.type = newValue;
       default:
         return;
     }
