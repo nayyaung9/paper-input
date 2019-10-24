@@ -12,6 +12,7 @@
   <li>autofocus</li>
   <li>margin</li>
   <li>className</li>
+  <li>variant</li>
 </ul>
 
 ## How to use it
@@ -94,3 +95,30 @@ fullwidth ပေးလိုက်ရင် သူ့ parent container ရဲ့
   ></paper-input>
 </div>
 ```
+
+<img src="./image/two-paper-input.jpg">
+
+- variant
+
+```
+<div class="container">
+  <paper-input
+    placeholder="Email"
+    type="email"
+    required
+    margin
+    fullwidth
+    variant="outlined"
+  ></paper-input>
+
+  <paper-input
+    placeholder="Password"
+    type="password"
+    required
+    margin
+    fullwidth
+    variant="outlined"
+  ></paper-input>
+</div>
+```
+<img src="./image/paper-input-variant-outlined.jpg">
