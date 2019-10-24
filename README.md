@@ -127,3 +127,12 @@ fullwidth ပေးလိုက်ရင် သူ့ parent container ရဲ့
 </div>
 ```
 <img src="./image/paper-input-variant-outlined.jpg">
+
+## Challenging of hyper-paper-input
+
+- [x] Component features
+- [ ] Styling custom CSS into Component
+- [ ] CDN link for Component
+
+
+@github/nayyaung9 
