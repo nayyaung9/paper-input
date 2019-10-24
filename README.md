@@ -4,6 +4,7 @@
 
 <ul>
   <li>Placeholder</li>
+  <li>name</li>
   <li>fullwidth</li>
   <li>type</li>
   <li>required</li>
@@ -49,13 +50,17 @@ index.html ဆောက်ပြီး script tag နဲ့ paper-input.js က�
 
 ## features
 - Placeholder
+- name
 
 ```
 <paper-input
   placeholder="first name"
+  name="first-name"
 ></paper-input>
 ```
-- fullwidth 
+name attribute လေးက input ရဲ့ နာမည်သတ်မှတ်တဲ့အခါ သုံးပါတယ်။
+
+- fullwidth
 
 fullwidth ပေးလိုက်ရင် သူ့ parent container ရဲ့ width ရှိသလောက် နေရာ ယူသွားပါလိမ့်မယ်။
 

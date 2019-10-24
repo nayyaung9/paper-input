@@ -17,12 +17,12 @@ template.innerHTML = `
     border-radius: .5em;
   }
   </style>
-  <input type="text" class="paperInput_standard"/>
+  <input type="text" class="paperInput_standard" name=""/>
 `;
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus', 'margin', 'class', 'variant']
+    return ['placeholder', 'name', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus', 'margin', 'class', 'variant']
   }
 
   $paperInput
@@ -36,14 +36,12 @@ class PaperInput extends HTMLElement {
     this.$paperInput = this.shadowRoot.querySelector('input');
   }
 
-  connectedCallback() {
-    console.log('work')
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    switch(name) {
+  attributeChangedCallback(attr, oldValue, newValue) {
+    switch(attr) {
       case 'placeholder':
         return this.$paperInput.placeholder = newValue;
+      case 'name':
+        return this.$paperInput.name = newValue;
       case 'fullwidth':
         return this.$paperInput.style.width= "100%";
       case 'type':
