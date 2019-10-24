@@ -9,20 +9,37 @@ template.innerHTML = `
     border-bottom: 1px solid #ddd;
   }
   </style>
-  <input type="text" name="paper-input" />
+  <input type="text" name="paper-input"/>
 `;
 
 class PaperInput extends HTMLElement {
+  static get observedAttributes() {
+    return ['placeholder']
+  }
+
+  $paperInput
+
   constructor() {
     super();
     this.innerHTML = 'Input Something'
 
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    this.$paperInput = this.shadowRoot.querySelector('input');
   }
 
   connectedCallback() {
     console.log('work')
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    switch(name) {
+      case 'placeholder':
+        return this.$paperInput.placeholder = newValue;
+      default:
+        return;
+    }
   }
 }
 
