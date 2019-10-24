@@ -1,5 +1,14 @@
 const template = document.createElement('template');
 template.innerHTML = `
+  <style>
+  input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  </style>
   <input type="text" name="paper-input" />
 `;
 
