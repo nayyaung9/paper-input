@@ -9,4 +9,5 @@
   <li>required</li>
   <li>disabled</li>
   <li>value</li>
+  <li>autofocus</li>
 </ul>
