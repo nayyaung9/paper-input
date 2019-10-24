@@ -36,10 +36,12 @@ index.html ဆောက်ပြီး script tag နဲ့ paper-input.js က�
 
 ```
 
-
 ```
 <body>
-  <paper-input>
-  </paper-input>
+  <paper-input></paper-input>
+
+  <script src='./node_modules/hyper-paper-input/paper-input.js'></script>
 </body>
 ```
+### Result
+<img src='./image/default-paper-input.jpg'>
