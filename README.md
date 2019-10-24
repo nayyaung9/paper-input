@@ -24,13 +24,22 @@ directory တစ်ခုဆောက်ပြီး terminal ‌ကနေ hyper
 index.html ဆောက်ပြီး script tag နဲ့ paper-input.js ကို ချိတ်လိုက်ပါ။
 
 ```
--node_modules 
+-/node_modules 
 -index.html 
 ```
-
+### index.html
 ```
 <body>
+  ...
   <script src='./node_modules/hyper-paper-input/paper-input.js'></script>
 </body>
 
+```
+
+
+```
+<body>
+  <paper-input>
+  </paper-input>
+</body>
 ```
