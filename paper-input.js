@@ -1,6 +1,9 @@
 const template = document.createElement('template');
 template.innerHTML = `
   <style>
+  *:focus {
+    outline: none;
+  }
   input {
     border-top: none;
     border-right: none;
@@ -15,7 +18,7 @@ template.innerHTML = `
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus']
+    return ['placeholder', 'fullwidth', 'type', 'required', 'disabled', 'value', 'autofocus', 'margin']
   }
 
   $paperInput
@@ -49,6 +52,8 @@ class PaperInput extends HTMLElement {
         return this.$paperInput.value = newValue;
       case 'autofocus':
         return this.$paperInput.autofocus = true;
+      case 'margin':
+        return this.$paperInput.style.margin = '10px auto';
       default:
         return;
     }
