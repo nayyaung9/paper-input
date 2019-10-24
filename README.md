@@ -8,4 +8,5 @@
   <li>type</li>
   <li>required</li>
   <li>disabled</li>
+  <li>value</li>
 </ul>
