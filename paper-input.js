@@ -6,7 +6,8 @@ template.innerHTML = `
     border-right: none;
     border-left: none;
     padding: 6px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
+    style: display;
   }
   </style>
   <input type="text" name="paper-input"/>
@@ -14,14 +15,13 @@ template.innerHTML = `
 
 class PaperInput extends HTMLElement {
   static get observedAttributes() {
-    return ['placeholder']
+    return ['placeholder', 'fullwidth']
   }
 
   $paperInput
 
   constructor() {
     super();
-    this.innerHTML = 'Input Something'
 
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
@@ -37,6 +37,8 @@ class PaperInput extends HTMLElement {
     switch(name) {
       case 'placeholder':
         return this.$paperInput.placeholder = newValue;
+      case 'fullwidth':
+        return this.$paperInput.style.width= "100%";
       default:
         return;
     }
