@@ -45,3 +45,12 @@ index.html ဆောက်ပြီး script tag နဲ့ paper-input.js က�
 ```
 ### Result
 <img src='./image/default-paper-input.jpg'>
+
+## features
+- Placeholder
+
+```
+<paper-input
+  placeholder="first name"
+></paper-input>
+```
